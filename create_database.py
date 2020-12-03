@@ -49,7 +49,6 @@ def create_regressor(data:pd.DataFrame, x_names: list, y_name:str):
     
     rf = RandomForestRegressor(random_state=86)
     rf.fit(x, y)
-    print(str(y_name) + " regressor score: " , rf.score(x, y))
     return rf
 
 
